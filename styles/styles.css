@@ -14,6 +14,7 @@ a {
     font-size: 13px;
 }
 
+/* Navigation Bar Section */
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -57,45 +58,101 @@ a {
     align-self: center;
 }
 
-#footbar {
+/* Main Section */
+#main {
+    min-height: 100%;
     display: grid;
-    grid-template-columns: 50px 50px 50px 1fr 50px 50px 50px;
-    grid-template-rows: 50px;
-    grid-template-areas: "advertising business howsearchworks . privacy terms settings";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas:
+    ". googlelogo ."
+    ". searchbar ."
+    ". flexbox ."
+    ". . .";
+}
+
+#googlelogo {
+    grid-area: googlelogo;
+    justify-self: center;
+    align-self: center;
+}
+
+#searchbar {
+    grid-area: searchbar;
+    align-self: center;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    align-self: center;
+    justify-self: center;
+}
+
+#searchbutton {
+}
+
+#luckybutton {
+}
+
+/* Footer Navigation Section */
+#footbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+    "language language . . . . ."
+    "advertising business howsearchworks . privacy terms settings";
+}
+
+#language {
+    grid-area: language;
+    justify-self: center;
+    align-self: center;
 }
 
 #Advertising {
-    grid-area: advetising;
+    grid-area: advertising;
     justify-self: center;
     align-self: center;
+    color: rgba(0,0,0,.54)
 }
 
 #Business {
     grid-area: business;
     justify-self: center;
     align-self: center;
+    color:rgba(0,0,0,.54)
 }
 
 #How-Search-Works {
     grid-area: howsearchworks;
     justify-self: center;
     align-self: center;
+    color: rgba(0,0,0,.54)
 }
 
 #Privacy {
     grid-area: privacy;
     justify-self: center;
     align-self: center;
+    color: rgba(0,0,0,.54)
 }
 
 #Terms {
     grid-area: terms;
     justify-self: center;
     align-self: center;
+    color: rgba(0,0,0,.54)
 }
 
 #Settings {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+    color: rgba(0,0,0,.54)
 }
