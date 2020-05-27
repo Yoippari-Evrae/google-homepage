@@ -1,41 +1,101 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
-    text-align: center;
     font-family: 'Arial', sans-serif;
-    color: white;
+    color: rgba(0,0,0,0.87);
 }
 
-.gobutton {
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
-    font-family: arial, sans-serif;
-    font-size: 14px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    font-size: 14px;
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
 }
 
-#searchbar {
-background: white;
-display: flex;
-border: 1px solid #dfe1e5;
-box-shadow: none;
-border-radius: 24px;
-height: 44px;
-margin: 0 auto;
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images googleapps googleaccount";
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#About {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
 }
 
-li {
-    display: inline;
-    color: darkblue;
+#Store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#Gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#Images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#Google-Apps {
+    grid-area: googleapps;
+    justify-self: center;
+    align-self: center;
+}
+
+#Google-Account {
+    grid-area: googleaccount;
+    justify-self: center;
+    align-self: center;
+}
+
+#footbar {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 1fr 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advertising business howsearchworks . privacy terms settings";
+}
+
+#Advertising {
+    grid-area: advetising;
+    justify-self: center;
+    align-self: center;
+}
+
+#Business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#How-Search-Works {
+    grid-area: howsearchworks;
+    justify-self: center;
+    align-self: center;
+}
+
+#Privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#Terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#Settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
 }
